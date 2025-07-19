@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+#root {
+  padding: 15px;
+}
+
+.data-leak-container {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.stats-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tracker-stat {
+  background-color: #fff8e1;
+  border: 1px solid #ffd54f;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs button {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #7f8c8d;
+}
+
+.tabs button.active {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+}
+
+.data-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.list-header {
+  display: flex;
+  background-color: #f8f9fa;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.list-header > div {
+  flex: 1;
+}
+
+.request-list, .cookie-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.request-item, .cookie-item {
+  display: flex;
+  padding: 10px 15px;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 0.85rem;
+}
+
+.request-item > div, .cookie-item > div {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.url {
+  color: #3498db;
+}
+
+.tracker {
+  background-color: #ffebee;
+}
+
+.tracker .url {
+  color: #e53935;
+}

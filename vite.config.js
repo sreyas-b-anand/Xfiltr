@@ -11,7 +11,7 @@ export default defineConfig({
   rollupOptions: {
     input: {
       background: resolve(__dirname, 'src/background.js'),
-      sidepanel: resolve(__dirname, 'src/sidepanel.html'),
+      sidepanel: resolve(__dirname, 'sidepanel.html'),
     },
     output: {
       entryFileNames: '[name].js', // No hash in filename

@@ -1,11 +1,20 @@
 {
-  "name": "React Side Panel Extension",
-  "description": "Chrome Extension with Side Panel using React + Vite",
+  "name": "Data Leak Tracker",
+  "description": "Tracks website data leakage via cookies and trackers",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["sidePanel", "tabs"],
+  "permissions": [
+    "sidePanel",
+    "tabs",
+    "webRequest",
+    "storage",
+    "cookies"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "action": {
-    "default_title": "Open Side Panel"
+    "default_title": "Open Data Leak Tracker"
   },
   "background": {
     "service_worker": "background.js",
@@ -15,4 +24,3 @@
     "default_path": "sidepanel.html"
   }
 }
-
